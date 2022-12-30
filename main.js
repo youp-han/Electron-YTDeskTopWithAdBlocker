@@ -13,6 +13,7 @@ function createWindow(){
         minHeight: 800,
         header:"YTAdblocker",
         autoHideMenuBar: true,
+        frame: false,
         show:false,
         webPreferences:
         {
