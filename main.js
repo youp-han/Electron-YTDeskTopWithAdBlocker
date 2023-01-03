@@ -2,7 +2,7 @@
 const {app, BrowserWindow, session } = require('electron');
 const path = require('path');
 
-const defaultUrl = 'https://www.youtube.com'
+const defaultUrl = 'https://www.youtube.com/';
 
 
 function createWindow(){
@@ -13,7 +13,7 @@ function createWindow(){
         minHeight: 800,
         header:"YTAdblocker",
         autoHideMenuBar: true,
-        frame: false,
+        //frame: false,
         show:false,
         webPreferences:
         {
