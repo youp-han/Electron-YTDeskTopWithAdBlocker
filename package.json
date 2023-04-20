@@ -1,6 +1,6 @@
 {
   "name": "YTDesktopAddBlocker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "YouTube Desktop App With No Add",
   "main": "main.js",
   "scripts": {
@@ -9,18 +9,16 @@
     "create-installer-win": "node installers/windows/createinstaller.js",
     "package-mac": "electron-packager . --overwrite  --icon=assets/icons/mac/icon.ico --platform=darwin --arch=x64 --prune=true --out=release-builds",
     "package-linux": "electron-packager . YTDesktopAddBlocker --overwrite --overwrite --asar=true --icon=assets/icons/png/icon.ico --platform=linux --arch=x64 --prune=true --out=release-builds"
-
-
   },
   "author": "JJST Company",
   "license": "MH",
   "devDependencies": {
-    "electron": "^21.1.1",
-    "electron-packager": "^14.2.1",
+    "electron": "^24.1.2",
+    "electron-packager": "^17.1.1",
     "electron-winstaller": "^4.0.0"
   },
   "dependencies": {
-    "@cliqz/adblocker-electron": "^1.25.1",
+    "@cliqz/adblocker-electron": "^1.26.5",
     "cross-fetch": "^3.1.5"
   },
   "build": {

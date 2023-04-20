@@ -5,24 +5,24 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-console.log("rederer.js=========");
-const {shell, ipcRenderer} = require('electron');
-const cpr = require("./modules/createPopupRemote");
-const fd = require("./modules/fileDownload");
-const dialogPop = require('electron').remote.dialog;
-const fs = require('fs');
-var remote = require('electron').remote;
+// console.log("rederer.js=========");
+// const {shell, ipcRenderer} = require('electron');
+// const cpr = require("./modules/createPopupRemote");
+// const fd = require("./modules/fileDownload");
+// const dialogPop = require('electron').remote.dialog;
+// const fs = require('fs');
+// var remote = require('electron').remote;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // windows onLoad
 //////////////////////////////////////////////////////////////////////////////////////////////////
- window.onload = () => {
+//  window.onload = () => {
 
-    // document.getElementById("username").addEventListener("focusout", function(){
-    //     alert("UsernameOut");
-    // })
+//     // document.getElementById("username").addEventListener("focusout", function(){
+//     //     alert("UsernameOut");
+//     // })
 
     
-    alert("hello");
+//     alert("hello");
     
-}
+// }
