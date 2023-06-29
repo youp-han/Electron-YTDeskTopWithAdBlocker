@@ -1,25 +1,29 @@
 {
   "name": "YTDesktopAddBlocker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "YouTube Desktop App With No Add",
   "main": "main.js",
-  "scripts": {
-    "start": "electron --core .",
-    "package-win": "electron-packager . YTDesktopAddBlocker --overwrite --asar=true --icon=assets/icons/win/icon.ico --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"YTDesktopAddBlocker\"",
-    "create-installer-win": "node installers/windows/createinstaller.js",
-    "package-mac": "electron-packager . --overwrite  --icon=assets/icons/mac/icon.ico --platform=darwin --arch=x64 --prune=true --out=release-builds",
-    "package-linux": "electron-packager . YTDesktopAddBlocker --overwrite --overwrite --asar=true --icon=assets/icons/png/icon.ico --platform=linux --arch=x64 --prune=true --out=release-builds"
+  "scripts": {    
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "electron-forge start",
+  "package": "electron-forge package",
+  "make": "electron-forge make"
   },
   "author": "JJST Company",
   "license": "MH",
   "devDependencies": {
     "electron": "^24.1.2",
-    "electron-packager": "^17.1.1",
-    "electron-winstaller": "^4.0.0"
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1"
   },
   "dependencies": {
-    "@cliqz/adblocker-electron": "^1.26.5",
-    "cross-fetch": "^3.1.5"
+    "@cliqz/adblocker-electron": "^1.26.6",
+    "cross-fetch": "^3.1.5",
+    "electron-squirrel-startup": "^1.0.0"
+
   },
   "build": {
     "appId": "com.YTDesktopAddBlocker.id"
